@@ -1,0 +1,9 @@
+<aura:component description="ServerCaller">
+    <aura:method name="callToServer" action="{!c.serverCall}">
+        <aura:attribute name="callerComponent" type="Aura.Component" required="true"/>
+        <aura:attribute name="actionMethod" type="String" required="true"/>
+        <aura:attribute name="actionParams" type="Object" required="true"/>
+        <aura:attribute name="actionCallback" type="Object" required="true"/>
+        <aura:attribute name="actionErrorCallback" type="Object"/>
+    </aura:method>
+</aura:component>
